@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		09853CC41E48F9A8005E5309 /* RtSwift (Deployment) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09853CC51E48F9A8005E5309 /* Build configuration list for PBXAggregateTarget "RtSwift (Deployment)" */;
+			buildPhases = (
+				09853CC81E48F9B3005E5309 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "RtSwift (Deployment)";
+			productName = "RtSwift (Deployment)";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09853C8D1E4893A2005E5309 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C861E489393005E5309 /* libTheAmazingAudioEngine.a */; };
+		09853C951E48948D005E5309 /* RtSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853C941E48948D005E5309 /* RtSwiftTests.swift */; };
+		09853C971E48948D005E5309 /* RtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E33A1E48926000BDF9AF /* RtSwift.framework */; };
+		09853C9E1E489552005E5309 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C9D1E489552005E5309 /* UIKit.framework */; };
+		09853CA01E48955B005E5309 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C9F1E48955B005E5309 /* Accelerate.framework */; };
+		09853CA31E489BC2005E5309 /* RtSwiftBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 09853CA11E489BC2005E5309 /* RtSwiftBridge.h */; };
+		09853CA41E489BC2005E5309 /* RtSwiftBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 09853CA21E489BC2005E5309 /* RtSwiftBridge.m */; };
+		09853CA71E489C22005E5309 /* RtSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */; };
+		09853CAF1E48A31D005E5309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853CAE1E48A31D005E5309 /* AppDelegate.swift */; };
+		09853CB11E48A31D005E5309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853CB01E48A31D005E5309 /* ViewController.swift */; };
+		09853CB41E48A31D005E5309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09853CB21E48A31D005E5309 /* Main.storyboard */; };
+		09853CB61E48A31D005E5309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09853CB51E48A31D005E5309 /* Assets.xcassets */; };
+		09853CB91E48A31D005E5309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09853CB71E48A31D005E5309 /* LaunchScreen.storyboard */; };
+		09853CC11E48AABF005E5309 /* RtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E33A1E48926000BDF9AF /* RtSwift.framework */; };
+		09853CC21E48AABF005E5309 /* RtSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E33A1E48926000BDF9AF /* RtSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09B6E3561E4892AC00BDF9AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3551E4892AC00BDF9AF /* AVFoundation.framework */; };
+		09B6E35A1E4892D700BDF9AF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3581E4892D700BDF9AF /* AudioToolbox.framework */; };
+		09B6E35B1E4892D700BDF9AF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3591E4892D700BDF9AF /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09853C851E489393005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		09853C871E489393005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A5687101B54610900243427;
+			remoteInfo = "TheAmazingAudioEngine OS X";
+		};
+		09853C891E489393005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17BB5B401BECD101007A2892;
+			remoteInfo = "TheAmazingAudioEngine tvOS";
+		};
+		09853C8B1E48939E005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		09853C981E48948D005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B6E3311E48926000BDF9AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09B6E3391E48926000BDF9AF;
+			remoteInfo = RtSwift;
+		};
+		09853CBE1E48A6BB005E5309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B6E3311E48926000BDF9AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09B6E3391E48926000BDF9AF;
+			remoteInfo = RtSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09853CC31E48AABF005E5309 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09853CC21E48AABF005E5309 /* RtSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		09853C921E48948D005E5309 /* RtSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09853C941E48948D005E5309 /* RtSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtSwiftTests.swift; sourceTree = "<group>"; };
+		09853C961E48948D005E5309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09853C9D1E489552005E5309 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09853C9F1E48955B005E5309 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		09853CA11E489BC2005E5309 /* RtSwiftBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtSwiftBridge.h; sourceTree = "<group>"; };
+		09853CA21E489BC2005E5309 /* RtSwiftBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtSwiftBridge.m; sourceTree = "<group>"; };
+		09853CAC1E48A31D005E5309 /* RtSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RtSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09853CAE1E48A31D005E5309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09853CB01E48A31D005E5309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09853CB31E48A31D005E5309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09853CB51E48A31D005E5309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09853CB81E48A31D005E5309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09853CBA1E48A31D005E5309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B6E33A1E48926000BDF9AF /* RtSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RtSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B6E33E1E48926000BDF9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B6E3551E4892AC00BDF9AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		09B6E3581E4892D700BDF9AF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		09B6E3591E4892D700BDF9AF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RtSwift.swift; sourceTree = "<group>"; };
+		09B6E35E1E48930100BDF9AF /* RtSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09853C8F1E48948D005E5309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853C971E48948D005E5309 /* RtSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09853CA91E48A31D005E5309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CC11E48AABF005E5309 /* RtSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B6E3361E48926000BDF9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CA01E48955B005E5309 /* Accelerate.framework in Frameworks */,
+				09853C9E1E489552005E5309 /* UIKit.framework in Frameworks */,
+				09853C8D1E4893A2005E5309 /* libTheAmazingAudioEngine.a in Frameworks */,
+				09B6E35A1E4892D700BDF9AF /* AudioToolbox.framework in Frameworks */,
+				09B6E35B1E4892D700BDF9AF /* CoreAudio.framework in Frameworks */,
+				09B6E3561E4892AC00BDF9AF /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09853C801E489393005E5309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09853C861E489393005E5309 /* libTheAmazingAudioEngine.a */,
+				09853C881E489393005E5309 /* libTheAmazingAudioEngine OS X.a */,
+				09853C8A1E489393005E5309 /* libTheAmazingAudioEngine tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09853C931E48948D005E5309 /* RtSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				09853C941E48948D005E5309 /* RtSwiftTests.swift */,
+				09853C961E48948D005E5309 /* Info.plist */,
+			);
+			path = RtSwiftTests;
+			sourceTree = "<group>";
+		};
+		09853CAD1E48A31D005E5309 /* RtSwiftTest */ = {
+			isa = PBXGroup;
+			children = (
+				09853CAE1E48A31D005E5309 /* AppDelegate.swift */,
+				09853CB01E48A31D005E5309 /* ViewController.swift */,
+				09853CB21E48A31D005E5309 /* Main.storyboard */,
+				09853CB51E48A31D005E5309 /* Assets.xcassets */,
+				09853CB71E48A31D005E5309 /* LaunchScreen.storyboard */,
+				09853CBA1E48A31D005E5309 /* Info.plist */,
+			);
+			path = RtSwiftTest;
+			sourceTree = "<group>";
+		};
+		09B6E3301E48926000BDF9AF = {
+			isa = PBXGroup;
+			children = (
+				09B6E33C1E48926000BDF9AF /* RtSwift */,
+				09853C931E48948D005E5309 /* RtSwiftTests */,
+				09853CAD1E48A31D005E5309 /* RtSwiftTest */,
+				09B6E33B1E48926000BDF9AF /* Products */,
+				09B6E3541E4892AC00BDF9AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09B6E33B1E48926000BDF9AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B6E33A1E48926000BDF9AF /* RtSwift.framework */,
+				09853C921E48948D005E5309 /* RtSwiftTests.xctest */,
+				09853CAC1E48A31D005E5309 /* RtSwiftTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09B6E33C1E48926000BDF9AF /* RtSwift */ = {
+			isa = PBXGroup;
+			children = (
+				09B6E33E1E48926000BDF9AF /* Info.plist */,
+				09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */,
+				09B6E35E1E48930100BDF9AF /* RtSwift-Bridging-Header.h */,
+				09853CA11E489BC2005E5309 /* RtSwiftBridge.h */,
+				09853CA21E489BC2005E5309 /* RtSwiftBridge.m */,
+			);
+			path = RtSwift;
+			sourceTree = "<group>";
+		};
+		09B6E3541E4892AC00BDF9AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09853C9F1E48955B005E5309 /* Accelerate.framework */,
+				09853C9D1E489552005E5309 /* UIKit.framework */,
+				09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */,
+				09B6E3581E4892D700BDF9AF /* AudioToolbox.framework */,
+				09B6E3591E4892D700BDF9AF /* CoreAudio.framework */,
+				09B6E3551E4892AC00BDF9AF /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09B6E3371E48926000BDF9AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CA31E489BC2005E5309 /* RtSwiftBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09853C911E48948D005E5309 /* RtSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09853C9A1E48948D005E5309 /* Build configuration list for PBXNativeTarget "RtSwiftTests" */;
+			buildPhases = (
+				09853C8E1E48948D005E5309 /* Sources */,
+				09853C8F1E48948D005E5309 /* Frameworks */,
+				09853C901E48948D005E5309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09853C991E48948D005E5309 /* PBXTargetDependency */,
+			);
+			name = RtSwiftTests;
+			productName = RtSwiftTests;
+			productReference = 09853C921E48948D005E5309 /* RtSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09853CAB1E48A31D005E5309 /* RtSwiftTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09853CBB1E48A31D005E5309 /* Build configuration list for PBXNativeTarget "RtSwiftTest" */;
+			buildPhases = (
+				09853CA81E48A31D005E5309 /* Sources */,
+				09853CA91E48A31D005E5309 /* Frameworks */,
+				09853CAA1E48A31D005E5309 /* Resources */,
+				09853CC31E48AABF005E5309 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09853CBF1E48A6BB005E5309 /* PBXTargetDependency */,
+			);
+			name = RtSwiftTest;
+			productName = RtSwiftTest;
+			productReference = 09853CAC1E48A31D005E5309 /* RtSwiftTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09B6E3391E48926000BDF9AF /* RtSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B6E3421E48926000BDF9AF /* Build configuration list for PBXNativeTarget "RtSwift" */;
+			buildPhases = (
+				09B6E3351E48926000BDF9AF /* Sources */,
+				09B6E3361E48926000BDF9AF /* Frameworks */,
+				09B6E3371E48926000BDF9AF /* Headers */,
+				09B6E3381E48926000BDF9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09853C8C1E48939E005E5309 /* PBXTargetDependency */,
+			);
+			name = RtSwift;
+			productName = RtSwift;
+			productReference = 09B6E33A1E48926000BDF9AF /* RtSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09B6E3311E48926000BDF9AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Spencer Salazar";
+				TargetAttributes = {
+					09853C911E48948D005E5309 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PTAJH9H88F;
+						ProvisioningStyle = Automatic;
+					};
+					09853CAB1E48A31D005E5309 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PTAJH9H88F;
+						ProvisioningStyle = Automatic;
+					};
+					09853CC41E48F9A8005E5309 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PTAJH9H88F;
+						ProvisioningStyle = Automatic;
+					};
+					09B6E3391E48926000BDF9AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PTAJH9H88F;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 09B6E3341E48926000BDF9AF /* Build configuration list for PBXProject "RtSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09B6E3301E48926000BDF9AF;
+			productRefGroup = 09B6E33B1E48926000BDF9AF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09853C801E489393005E5309 /* Products */;
+					ProjectRef = 09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				09B6E3391E48926000BDF9AF /* RtSwift */,
+				09853C911E48948D005E5309 /* RtSwiftTests */,
+				09853CAB1E48A31D005E5309 /* RtSwiftTest */,
+				09853CC41E48F9A8005E5309 /* RtSwift (Deployment) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09853C861E489393005E5309 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = 09853C851E489393005E5309 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09853C881E489393005E5309 /* libTheAmazingAudioEngine OS X.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTheAmazingAudioEngine OS X.a";
+			remoteRef = 09853C871E489393005E5309 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09853C8A1E489393005E5309 /* libTheAmazingAudioEngine tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTheAmazingAudioEngine tvOS.a";
+			remoteRef = 09853C891E489393005E5309 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09853C901E48948D005E5309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09853CAA1E48A31D005E5309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CB91E48A31D005E5309 /* LaunchScreen.storyboard in Resources */,
+				09853CB61E48A31D005E5309 /* Assets.xcassets in Resources */,
+				09853CB41E48A31D005E5309 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B6E3381E48926000BDF9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09853CC81E48F9B3005E5309 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09853C8E1E48948D005E5309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853C951E48948D005E5309 /* RtSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09853CA81E48A31D005E5309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CB11E48A31D005E5309 /* ViewController.swift in Sources */,
+				09853CAF1E48A31D005E5309 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B6E3351E48926000BDF9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09853CA41E489BC2005E5309 /* RtSwiftBridge.m in Sources */,
+				09853CA71E489C22005E5309 /* RtSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09853C8C1E48939E005E5309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			targetProxy = 09853C8B1E48939E005E5309 /* PBXContainerItemProxy */;
+		};
+		09853C991E48948D005E5309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09B6E3391E48926000BDF9AF /* RtSwift */;
+			targetProxy = 09853C981E48948D005E5309 /* PBXContainerItemProxy */;
+		};
+		09853CBF1E48A6BB005E5309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09B6E3391E48926000BDF9AF /* RtSwift */;
+			targetProxy = 09853CBE1E48A6BB005E5309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09853CB21E48A31D005E5309 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09853CB31E48A31D005E5309 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09853CB71E48A31D005E5309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09853CB81E48A31D005E5309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09853C9B1E48948D005E5309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				INFOPLIST_FILE = RtSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09853C9C1E48948D005E5309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				INFOPLIST_FILE = RtSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09853CBC1E48A31D005E5309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				INFOPLIST_FILE = RtSwiftTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwiftTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09853CBD1E48A31D005E5309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				INFOPLIST_FILE = RtSwiftTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwiftTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09853CC61E48F9A8005E5309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09853CC71E48F9A8005E5309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09B6E3401E48926000BDF9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09B6E3411E48926000BDF9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09B6E3431E48926000BDF9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TheAmazingAudioEngine/";
+				INFOPLIST_FILE = RtSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RtSwift/RtSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09B6E3441E48926000BDF9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PTAJH9H88F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TheAmazingAudioEngine/";
+				INFOPLIST_FILE = RtSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.ccrma.RtSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RtSwift/RtSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09853C9A1E48948D005E5309 /* Build configuration list for PBXNativeTarget "RtSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09853C9B1E48948D005E5309 /* Debug */,
+				09853C9C1E48948D005E5309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09853CBB1E48A31D005E5309 /* Build configuration list for PBXNativeTarget "RtSwiftTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09853CBC1E48A31D005E5309 /* Debug */,
+				09853CBD1E48A31D005E5309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09853CC51E48F9A8005E5309 /* Build configuration list for PBXAggregateTarget "RtSwift (Deployment)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09853CC61E48F9A8005E5309 /* Debug */,
+				09853CC71E48F9A8005E5309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B6E3341E48926000BDF9AF /* Build configuration list for PBXProject "RtSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B6E3401E48926000BDF9AF /* Debug */,
+				09B6E3411E48926000BDF9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B6E3421E48926000BDF9AF /* Build configuration list for PBXNativeTarget "RtSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B6E3431E48926000BDF9AF /* Debug */,
+				09B6E3441E48926000BDF9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09B6E3311E48926000BDF9AF /* Project object */;
+}
