@@ -24,7 +24,6 @@
 - (void)start:(void (^)(AudioBuffer, AudioBuffer, int))process {
 
     int numChannels = 2;
-    __block float phase;
     
     AudioStreamBasicDescription audioDescription;
     memset(&audioDescription, 0, sizeof(audioDescription));

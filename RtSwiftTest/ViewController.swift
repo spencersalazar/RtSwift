@@ -16,14 +16,19 @@ class ViewController: UIViewController {
     var freq1: Float = 220
     var freq2: Float = 221
     
+    var file: FileWvIn! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        file = FileWvIn()
+        file.openFile(Bundle.main.path(forResource: "snare_01.wav", ofType: ""))
+        
         RtSwift.start(process: { (left, right, numFrames) in
             for i in 0..<Int(numFrames) {
                 let samp1 = sinf(self.phase1*2*Float(M_PI))
-                let samp2 = sinf(self.phase2*2*Float(M_PI))
+                let samp2 = sinf(self.phase2*2*Float(M_PI)) + self.file.tick()
                 left[i] = samp2
                 right[i] = left[i]
                 self.phase1 += Float(self.freq1)/Float(RtSwift.sampleRate)

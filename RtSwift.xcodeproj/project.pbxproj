@@ -39,6 +39,16 @@
 		09B6E3561E4892AC00BDF9AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3551E4892AC00BDF9AF /* AVFoundation.framework */; };
 		09B6E35A1E4892D700BDF9AF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3581E4892D700BDF9AF /* AudioToolbox.framework */; };
 		09B6E35B1E4892D700BDF9AF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E3591E4892D700BDF9AF /* CoreAudio.framework */; };
+		09DB076A1E624BB700820419 /* FileRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07641E624BB700820419 /* FileRead.cpp */; };
+		09DB076B1E624BB700820419 /* FileRead.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07651E624BB700820419 /* FileRead.h */; };
+		09DB076C1E624BB700820419 /* FileWvIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07661E624BB700820419 /* FileWvIn.cpp */; };
+		09DB076D1E624BB700820419 /* FileWvIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07671E624BB700820419 /* FileWvIn.h */; };
+		09DB076E1E624BB700820419 /* Stk.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07681E624BB700820419 /* Stk.h */; };
+		09DB076F1E624BB700820419 /* WvIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07691E624BB700820419 /* WvIn.h */; };
+		09DB07721E624BEA00820419 /* FileWvIn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07701E624BEA00820419 /* FileWvIn.mm */; };
+		09DB07731E624BEA00820419 /* FileWvIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07711E624BEA00820419 /* FileWvIn.h */; };
+		09DB07751E626CFF00820419 /* Stk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07741E626CFF00820419 /* Stk.cpp */; };
+		09F0FB1C1E764692000E4EC5 /* snare_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09F0FB1B1E764692000E4EC5 /* snare_01.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +133,17 @@
 		09B6E3591E4892D700BDF9AF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RtSwift.swift; sourceTree = "<group>"; };
 		09B6E35E1E48930100BDF9AF /* RtSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		09DB07641E624BB700820419 /* FileRead.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileRead.cpp; sourceTree = "<group>"; };
+		09DB07651E624BB700820419 /* FileRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileRead.h; sourceTree = "<group>"; };
+		09DB07661E624BB700820419 /* FileWvIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileWvIn.cpp; sourceTree = "<group>"; };
+		09DB07671E624BB700820419 /* FileWvIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWvIn.h; sourceTree = "<group>"; };
+		09DB07681E624BB700820419 /* Stk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stk.h; sourceTree = "<group>"; };
+		09DB07691E624BB700820419 /* WvIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WvIn.h; sourceTree = "<group>"; };
+		09DB07701E624BEA00820419 /* FileWvIn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileWvIn.mm; sourceTree = "<group>"; };
+		09DB07711E624BEA00820419 /* FileWvIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWvIn.h; sourceTree = "<group>"; };
+		09DB07741E626CFF00820419 /* Stk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stk.cpp; sourceTree = "<group>"; };
+		09F0FB181E764493000E4EC5 /* RtSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtSwift.h; sourceTree = "<group>"; };
+		09F0FB1B1E764692000E4EC5 /* snare_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare_01.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +201,7 @@
 		09853CAD1E48A31D005E5309 /* RtSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				09F0FB1B1E764692000E4EC5 /* snare_01.wav */,
 				09853CAE1E48A31D005E5309 /* AppDelegate.swift */,
 				09853CB01E48A31D005E5309 /* ViewController.swift */,
 				09853CB21E48A31D005E5309 /* Main.storyboard */,
@@ -219,6 +241,9 @@
 				09B6E35E1E48930100BDF9AF /* RtSwift-Bridging-Header.h */,
 				09853CA11E489BC2005E5309 /* RtSwiftBridge.h */,
 				09853CA21E489BC2005E5309 /* RtSwiftBridge.m */,
+				09DB07711E624BEA00820419 /* FileWvIn.h */,
+				09DB07701E624BEA00820419 /* FileWvIn.mm */,
+				09F0FB181E764493000E4EC5 /* RtSwift.h */,
 			);
 			path = RtSwift;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 		09B6E3541E4892AC00BDF9AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09DB07611E624BA400820419 /* stk */,
 				09853C9F1E48955B005E5309 /* Accelerate.framework */,
 				09853C9D1E489552005E5309 /* UIKit.framework */,
 				09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */,
@@ -236,6 +262,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		09DB07611E624BA400820419 /* stk */ = {
+			isa = PBXGroup;
+			children = (
+				09DB07641E624BB700820419 /* FileRead.cpp */,
+				09DB07651E624BB700820419 /* FileRead.h */,
+				09DB07661E624BB700820419 /* FileWvIn.cpp */,
+				09DB07671E624BB700820419 /* FileWvIn.h */,
+				09DB07741E626CFF00820419 /* Stk.cpp */,
+				09DB07681E624BB700820419 /* Stk.h */,
+				09DB07691E624BB700820419 /* WvIn.h */,
+			);
+			name = stk;
+			path = lib/stk;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -243,6 +284,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DB07731E624BEA00820419 /* FileWvIn.h in Headers */,
+				09DB076F1E624BB700820419 /* WvIn.h in Headers */,
+				09DB076B1E624BB700820419 /* FileRead.h in Headers */,
+				09DB076E1E624BB700820419 /* Stk.h in Headers */,
+				09DB076D1E624BB700820419 /* FileWvIn.h in Headers */,
 				09853CA31E489BC2005E5309 /* RtSwiftBridge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09853CB91E48A31D005E5309 /* LaunchScreen.storyboard in Resources */,
+				09F0FB1C1E764692000E4EC5 /* snare_01.wav in Resources */,
 				09853CB61E48A31D005E5309 /* Assets.xcassets in Resources */,
 				09853CB41E48A31D005E5309 /* Main.storyboard in Resources */,
 			);
@@ -458,8 +505,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DB07751E626CFF00820419 /* Stk.cpp in Sources */,
 				09853CA41E489BC2005E5309 /* RtSwiftBridge.m in Sources */,
+				09DB076C1E624BB700820419 /* FileWvIn.cpp in Sources */,
+				09DB076A1E624BB700820419 /* FileRead.cpp in Sources */,
 				09853CA71E489C22005E5309 /* RtSwift.swift in Sources */,
+				09DB07721E624BEA00820419 /* FileWvIn.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +735,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TheAmazingAudioEngine/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/TheAmazingAudioEngine/",
+					"$(PROJECT_DIR)/lib/",
+				);
 				INFOPLIST_FILE = RtSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -708,7 +762,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TheAmazingAudioEngine/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/TheAmazingAudioEngine/",
+					"$(PROJECT_DIR)/lib/",
+				);
 				INFOPLIST_FILE = RtSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
