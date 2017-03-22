@@ -14,12 +14,13 @@ struct Math {
 
 public class RtSwift {
     
-    public static var sampleRate: Int = 48000
+    public static var sampleRate: Int = 44100
     static var bridge: RtSwiftBridge! = nil
     
     public static func start(process: @escaping (_ left: UnsafeMutableBufferPointer<Float>, _ right: UnsafeMutableBufferPointer<Float>, _ numFrames: Int) -> Void) {
         bridge = RtSwiftBridge()
         bridge.sampleRate = sampleRate
+        Stk.setSampleRate(Float(sampleRate));
         bridge?.start({ (_left, _right, nFrames) in
             let left = UnsafeMutableBufferPointer<Float>(_left)
             let right = UnsafeMutableBufferPointer<Float>(_right)

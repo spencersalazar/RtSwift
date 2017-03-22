@@ -49,6 +49,9 @@
 		09DB07731E624BEA00820419 /* FileWvIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DB07711E624BEA00820419 /* FileWvIn.h */; };
 		09DB07751E626CFF00820419 /* Stk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09DB07741E626CFF00820419 /* Stk.cpp */; };
 		09F0FB1C1E764692000E4EC5 /* snare_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09F0FB1B1E764692000E4EC5 /* snare_01.wav */; };
+		09F0FB3B1E80ED7D000E4EC5 /* Stk.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F0FB391E80ED7D000E4EC5 /* Stk.h */; };
+		09F0FB3C1E80ED7D000E4EC5 /* Stk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FB3A1E80ED7D000E4EC5 /* Stk.mm */; };
+		09F0FB401E80EF91000E4EC5 /* geetar-mono.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09F0FB3F1E80EF91000E4EC5 /* geetar-mono.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,9 @@
 		09DB07741E626CFF00820419 /* Stk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stk.cpp; sourceTree = "<group>"; };
 		09F0FB181E764493000E4EC5 /* RtSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtSwift.h; sourceTree = "<group>"; };
 		09F0FB1B1E764692000E4EC5 /* snare_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare_01.wav; sourceTree = "<group>"; };
+		09F0FB391E80ED7D000E4EC5 /* Stk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stk.h; sourceTree = "<group>"; };
+		09F0FB3A1E80ED7D000E4EC5 /* Stk.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Stk.mm; sourceTree = "<group>"; };
+		09F0FB3F1E80EF91000E4EC5 /* geetar-mono.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "geetar-mono.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,7 @@
 		09853CAD1E48A31D005E5309 /* RtSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				09F0FB3F1E80EF91000E4EC5 /* geetar-mono.wav */,
 				09F0FB1B1E764692000E4EC5 /* snare_01.wav */,
 				09853CAE1E48A31D005E5309 /* AppDelegate.swift */,
 				09853CB01E48A31D005E5309 /* ViewController.swift */,
@@ -244,6 +251,8 @@
 				09DB07711E624BEA00820419 /* FileWvIn.h */,
 				09DB07701E624BEA00820419 /* FileWvIn.mm */,
 				09F0FB181E764493000E4EC5 /* RtSwift.h */,
+				09F0FB391E80ED7D000E4EC5 /* Stk.h */,
+				09F0FB3A1E80ED7D000E4EC5 /* Stk.mm */,
 			);
 			path = RtSwift;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 			files = (
 				09DB07731E624BEA00820419 /* FileWvIn.h in Headers */,
 				09DB076F1E624BB700820419 /* WvIn.h in Headers */,
+				09F0FB3B1E80ED7D000E4EC5 /* Stk.h in Headers */,
 				09DB076B1E624BB700820419 /* FileRead.h in Headers */,
 				09DB076E1E624BB700820419 /* Stk.h in Headers */,
 				09DB076D1E624BB700820419 /* FileWvIn.h in Headers */,
@@ -455,6 +465,7 @@
 				09F0FB1C1E764692000E4EC5 /* snare_01.wav in Resources */,
 				09853CB61E48A31D005E5309 /* Assets.xcassets in Resources */,
 				09853CB41E48A31D005E5309 /* Main.storyboard in Resources */,
+				09F0FB401E80EF91000E4EC5 /* geetar-mono.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +522,7 @@
 				09DB076A1E624BB700820419 /* FileRead.cpp in Sources */,
 				09853CA71E489C22005E5309 /* RtSwift.swift in Sources */,
 				09DB07721E624BEA00820419 /* FileWvIn.mm in Sources */,
+				09F0FB3C1E80ED7D000E4EC5 /* Stk.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

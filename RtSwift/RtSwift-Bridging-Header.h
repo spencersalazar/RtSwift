@@ -12,5 +12,6 @@
 #import "TheAmazingAudioEngine/TheAmazingAudioEngine.h"
 #import "RtSwiftBridge.h"
 #import "FileWvIn.h"
+#import "Stk.h"
 
 #endif /* RtSwift_Bridging_Header_h */
