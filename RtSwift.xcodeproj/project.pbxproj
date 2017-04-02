@@ -21,13 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		097544301E90A054009865AE /* FastCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0975442E1E90A054009865AE /* FastCircularBuffer.cpp */; };
+		097544311E90A054009865AE /* FastCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0975442F1E90A054009865AE /* FastCircularBuffer.h */; };
 		09853C8D1E4893A2005E5309 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C861E489393005E5309 /* libTheAmazingAudioEngine.a */; };
 		09853C951E48948D005E5309 /* RtSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853C941E48948D005E5309 /* RtSwiftTests.swift */; };
 		09853C971E48948D005E5309 /* RtSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B6E33A1E48926000BDF9AF /* RtSwift.framework */; };
 		09853C9E1E489552005E5309 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C9D1E489552005E5309 /* UIKit.framework */; };
 		09853CA01E48955B005E5309 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09853C9F1E48955B005E5309 /* Accelerate.framework */; };
 		09853CA31E489BC2005E5309 /* RtSwiftBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 09853CA11E489BC2005E5309 /* RtSwiftBridge.h */; };
-		09853CA41E489BC2005E5309 /* RtSwiftBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 09853CA21E489BC2005E5309 /* RtSwiftBridge.m */; };
+		09853CA41E489BC2005E5309 /* RtSwiftBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09853CA21E489BC2005E5309 /* RtSwiftBridge.mm */; };
 		09853CA71E489C22005E5309 /* RtSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */; };
 		09853CAF1E48A31D005E5309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853CAE1E48A31D005E5309 /* AppDelegate.swift */; };
 		09853CB11E48A31D005E5309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09853CB01E48A31D005E5309 /* ViewController.swift */; };
@@ -114,6 +116,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0975442E1E90A054009865AE /* FastCircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastCircularBuffer.cpp; sourceTree = "<group>"; };
+		0975442F1E90A054009865AE /* FastCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCircularBuffer.h; sourceTree = "<group>"; };
 		09853C7F1E489393005E5309 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
 		09853C921E48948D005E5309 /* RtSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09853C941E48948D005E5309 /* RtSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtSwiftTests.swift; sourceTree = "<group>"; };
@@ -121,7 +125,7 @@
 		09853C9D1E489552005E5309 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09853C9F1E48955B005E5309 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		09853CA11E489BC2005E5309 /* RtSwiftBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtSwiftBridge.h; sourceTree = "<group>"; };
-		09853CA21E489BC2005E5309 /* RtSwiftBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtSwiftBridge.m; sourceTree = "<group>"; };
+		09853CA21E489BC2005E5309 /* RtSwiftBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RtSwiftBridge.mm; sourceTree = "<group>"; };
 		09853CAC1E48A31D005E5309 /* RtSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RtSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09853CAE1E48A31D005E5309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09853CB01E48A31D005E5309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -247,12 +251,14 @@
 				09B6E35C1E4892EF00BDF9AF /* RtSwift.swift */,
 				09B6E35E1E48930100BDF9AF /* RtSwift-Bridging-Header.h */,
 				09853CA11E489BC2005E5309 /* RtSwiftBridge.h */,
-				09853CA21E489BC2005E5309 /* RtSwiftBridge.m */,
+				09853CA21E489BC2005E5309 /* RtSwiftBridge.mm */,
 				09DB07711E624BEA00820419 /* FileWvIn.h */,
 				09DB07701E624BEA00820419 /* FileWvIn.mm */,
 				09F0FB181E764493000E4EC5 /* RtSwift.h */,
 				09F0FB391E80ED7D000E4EC5 /* Stk.h */,
 				09F0FB3A1E80ED7D000E4EC5 /* Stk.mm */,
+				0975442F1E90A054009865AE /* FastCircularBuffer.h */,
+				0975442E1E90A054009865AE /* FastCircularBuffer.cpp */,
 			);
 			path = RtSwift;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				09DB076E1E624BB700820419 /* Stk.h in Headers */,
 				09DB076D1E624BB700820419 /* FileWvIn.h in Headers */,
 				09853CA31E489BC2005E5309 /* RtSwiftBridge.h in Headers */,
+				097544311E90A054009865AE /* FastCircularBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +524,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DB07751E626CFF00820419 /* Stk.cpp in Sources */,
-				09853CA41E489BC2005E5309 /* RtSwiftBridge.m in Sources */,
+				09853CA41E489BC2005E5309 /* RtSwiftBridge.mm in Sources */,
+				097544301E90A054009865AE /* FastCircularBuffer.cpp in Sources */,
 				09DB076C1E624BB700820419 /* FileWvIn.cpp in Sources */,
 				09DB076A1E624BB700820419 /* FileRead.cpp in Sources */,
 				09853CA71E489C22005E5309 /* RtSwift.swift in Sources */,

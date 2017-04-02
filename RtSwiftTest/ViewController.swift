@@ -24,12 +24,12 @@ class ViewController: UIViewController {
         
         file = FileWvIn()
         file.openFile(Bundle.main.path(forResource: "geetar-mono.wav", ofType: ""))
-        
+        RtSwift.enableInput = true
         RtSwift.start(process: { (left, right, numFrames) in
             for i in 0..<Int(numFrames) {
                 let samp1 = sinf(self.phase1*2*Float(M_PI))
                 let samp2 = sinf(self.phase2*2*Float(M_PI))
-                let samp3 = self.file.tick()
+                let samp3 = left[i]
                 left[i] = samp3
                 right[i] = left[i]
                 self.phase1 += Float(self.freq1)/Float(RtSwift.sampleRate)

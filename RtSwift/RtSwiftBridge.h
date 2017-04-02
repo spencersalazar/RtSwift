@@ -12,6 +12,7 @@
 @interface RtSwiftBridge : NSObject
 
 @property NSInteger sampleRate;
+@property BOOL enableInput;
 
 - (void)start:(void (^)(AudioBuffer, AudioBuffer, int))process;
 
