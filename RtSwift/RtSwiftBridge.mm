@@ -90,7 +90,7 @@
         if(_inputBuffer.canWrite() >= frames)
             _inputBuffer.put(audio->mBuffers[0].mData, frames);
         else
-            NSLog(@"warning: dropping %u input frames", frames);
+            NSLog(@"warning: dropping %u input frames", (unsigned int) frames);
     }]];
     
     [_audioController addChannels:@[[AEBlockChannel channelWithBlock:^(const AudioTimeStamp *time,
