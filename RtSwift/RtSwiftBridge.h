@@ -15,5 +15,6 @@
 @property BOOL enableInput;
 
 - (void)start:(void (^)(AudioBuffer, AudioBuffer, int))process;
+- (void)startFullDuplex:(void (^)(AudioBuffer, AudioBuffer, AudioBuffer, int))process;
 
 @end

@@ -21,17 +21,20 @@
     AEBlockAudioReceiver *_inputReceiver;
     
     FastCircularBuffer _inputBuffer;
+    AudioBuffer _inputAudioBuffer;
 }
 
 @property NSUInteger numChannels;
 @property NSUInteger bufferSize;
 
+- (void)_initCommon;
+
 @end
 
 @implementation RtSwiftBridge
 
-- (void)start:(void (^)(AudioBuffer, AudioBuffer, int))process {
-
+- (void)_initCommon
+{
     self.numChannels = 2;
     self.bufferSize = 128;
     
@@ -47,59 +50,61 @@
     audioDescription.mSampleRate        = self.sampleRate;
     
     if(self.enableInput)
+    {
         _inputBuffer.initialize((unsigned int)(self.bufferSize*self.numChannels*INPUT_BUFFER_FACTOR)+1, sizeof(float));
+        _inputAudioBuffer.mData = calloc(self.bufferSize*self.numChannels, sizeof(float));
+        _inputAudioBuffer.mDataByteSize = (UInt32) (self.bufferSize*self.numChannels*sizeof(float));
+        _inputAudioBuffer.mNumberChannels = 1;
+    }
     
     _audioController = [[AEAudioController alloc] initWithAudioDescription:audioDescription inputEnabled:self.enableInput];
     _audioController.preferredBufferDuration = 128.0/self.sampleRate;
+}
+
+- (void)start:(void (^)(AudioBuffer, AudioBuffer, int))process
+{
+    self.enableInput = NO;
+    [self _initCommon];
     [_audioController start:NULL];
     
-    if(self.enableInput)
-    {
-        [_audioController addInputReceiver:[AEBlockAudioReceiver audioReceiverWithBlock:^(void *source,
-                                                                                          const AudioTimeStamp *time,
-                                                                                          UInt32 frames,
-                                                                                          AudioBufferList *audio) {
-            assert(audio->mNumberBuffers > 0);
-            
-            if(_inputBuffer.canWrite() >= frames)
-                _inputBuffer.put(audio->mBuffers[0].mData, frames);
-            else
-                NSLog(@"warning: dropping %u input frames", frames);
-        }]];
-    }
+    [_audioController addChannels:@[[AEBlockChannel channelWithBlock:^(const AudioTimeStamp *time,
+                                                                       UInt32 frames,
+                                                                       AudioBufferList *audio) {
+        process(audio->mBuffers[0], audio->mBuffers[1], frames);
+    }]]];
+}
+
+- (void)startFullDuplex:(void (^)(AudioBuffer, AudioBuffer, AudioBuffer, int))process
+{
+    self.enableInput = YES;
+    [self _initCommon];
+    
+    [_audioController start:NULL];
+    
+    [_audioController addInputReceiver:[AEBlockAudioReceiver audioReceiverWithBlock:^(void *source,
+                                                                                      const AudioTimeStamp *time,
+                                                                                      UInt32 frames,
+                                                                                      AudioBufferList *audio) {
+        assert(audio->mNumberBuffers > 0);
+        
+        if(_inputBuffer.canWrite() >= frames)
+            _inputBuffer.put(audio->mBuffers[0].mData, frames);
+        else
+            NSLog(@"warning: dropping %u input frames", frames);
+    }]];
     
     [_audioController addChannels:@[[AEBlockChannel channelWithBlock:^(const AudioTimeStamp *time,
                                                                        UInt32 frames,
                                                                        AudioBufferList *audio) {
         
-//        if(_bufferSize != frames)
-//        {
-//            NSLog(@"resizing audio buffer to %i", frames);
-//            if(_bufferLeft) free(_bufferLeft);
-//            if(_bufferRight) free(_bufferRight);
-//            _bufferLeft = (float *) calloc(frames, sizeof(float));
-//            _bufferRight = (float *) calloc(frames, sizeof(float));
-//            _bufferSize = frames;
-//        }
-        
         if(_enableInput)
         {
             while(_inputBuffer.canRead() < frames)
                 usleep(100);
-            _inputBuffer.get(audio->mBuffers[0].mData, frames);
+            _inputBuffer.get(_inputAudioBuffer.mData, frames);
         }
         
-        process(audio->mBuffers[0], audio->mBuffers[1], frames);
-        
-        // deinterleave
-//        for(int i = 0; i < frames; i++)
-//        {
-//            ((float*)(audio->mBuffers[0].mData))[i] = sinf(phase*2*M_PI);
-//            ((float*)(audio->mBuffers[1].mData))[i] = 0;
-//            phase += 220.0f/48000.0f;
-//            if(phase > 1)
-//                phase -=1 ;
-//        }
+        process(_inputAudioBuffer, audio->mBuffers[0], audio->mBuffers[1], frames);
     }]]];
 }
 
