@@ -36,7 +36,11 @@
 - (void)_initCommon
 {
     self.numChannels = 2;
+#if TARGET_IPHONE_SIMULATOR
+    self.bufferSize = 512;
+#else //
     self.bufferSize = 128;
+#endif //
     
     AudioStreamBasicDescription audioDescription;
     memset(&audioDescription, 0, sizeof(audioDescription));
